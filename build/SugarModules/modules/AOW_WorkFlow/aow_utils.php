@@ -87,10 +87,6 @@ function getModuleFields(
                             continue;
                         }
                     }
-                    file_put_contents('test.log',var_export($arr,1));
-                    if($arr['name'] == 'value02') {
-                        file_put_contents('test1.log', var_export((!isset($arr['source']) || $arr['source'] !== 'non-db' || $arr['aow'] == 'show'), 1));
-                    }
                     if ($arr['type'] !== 'link'
                         && $name !== 'currency_name'
                         && $name !== 'currency_symbol'
@@ -334,6 +330,14 @@ function getModuleField(
     // use the mod_strings for this module
     $mod_strings = return_module_language($current_language, $module);
 
+    // load SugarFieldHandler to render the field tpl file
+    static $sfh;
+
+    if (!isset($sfh)) {
+        require_once('include/SugarFields/SugarFieldHandler.php');
+        $sfh = new SugarFieldHandler();
+    }
+
     // if aor condition
     if (strstr($aow_field, 'aor_conditions_value') !== false) {
         // get aor condition row
@@ -437,14 +441,6 @@ function getModuleField(
 
         if (isset($vardef['name']) && ($vardef['name'] == 'date_entered' || $vardef['name'] == 'date_modified')) {
             $vardef['name'] = 'aow_temp_date';
-        }
-
-        // load SugarFieldHandler to render the field tpl file
-        static $sfh;
-
-        if (!isset($sfh)) {
-            require_once('include/SugarFields/SugarFieldHandler.php');
-            $sfh = new SugarFieldHandler();
         }
 
         $contents = $sfh->displaySmarty('fields', $vardef, $view, $displayParams);
@@ -581,7 +577,6 @@ function getModuleField(
             $quicksearch_js = str_replace($fieldname, $aow_field.'_display', $quicksearch_js);
             $quicksearch_js = str_replace($fieldlist[$fieldname]['id_name'], $aow_field, $quicksearch_js);
 
-        	echo $quicksearch_js;
         }
 
         if (isset($fieldlist[$fieldname]['module']) && $fieldlist[$fieldname]['module'] == 'Users') {
@@ -635,13 +630,6 @@ function getModuleField(
     }
 
     if (isset($fieldlist[$fieldname]['type']) && $fieldlist[$fieldname]['type'] == 'currency' && $view != 'EditView') {
-        static $sfh;
-
-        if (!isset($sfh)) {
-            require_once('include/SugarFields/SugarFieldHandler.php');
-            $sfh = new SugarFieldHandler();
-        }
-
         if ($currency_id != '' && !stripos($fieldname, '_USD')) {
             $userCurrencyId = $current_user->getPreference('currency');
             if ($currency_id != $userCurrencyId) {
@@ -655,7 +643,7 @@ function getModuleField(
 
         $parentfieldlist[strtoupper($fieldname)] = $value;
 
-        return($sfh->displaySmarty($parentfieldlist, $fieldlist[$fieldname], 'ListView', $displayParams));
+        return $sfh->displaySmarty($parentfieldlist, $fieldlist[$fieldname], 'ListView', $displayParams);
     }
 
     $ss->assign("QS_JS", $quicksearch_js);
@@ -704,7 +692,7 @@ function getDateField($module, $aow_field, $view, $value = null, $field_option =
         $view = 'EditView';
     }
 
-    $value = json_decode(html_entity_decode_utf8($value), true);
+    $value = json_decode(html_entity_decode($value, ENT_QUOTES, 'UTF-8'), true);
 
     if (!file_exists('modules/AOBH_BusinessHours/AOBH_BusinessHours.php')) {
         unset($app_list_strings['aow_date_type_list']['business_hours']);
@@ -764,7 +752,7 @@ function getAssignField($aow_field, $view, $value)
 {
     global $app_list_strings;
 
-    $value = json_decode(html_entity_decode_utf8($value), true);
+    $value = json_decode(html_entity_decode($value, ENT_QUOTES, 'UTF-8'), true);
 
     $roles = get_bean_select_array(true, 'ACLRole', 'name', '', 'name', true);
 
@@ -1019,7 +1007,7 @@ function fixUpFormatting($module, $field, $value)
             }
             break;
         case 'encrypt':
-            $value = $this->encrpyt_before_save($value);
+            $value = $bean->encrypt_before_save($value);
             break;
     }
     return $value;
