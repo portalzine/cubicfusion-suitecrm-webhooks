@@ -11,7 +11,7 @@ This is still in early testing ...
 ## Installation
 
 1. Before installation, you should make a backup copy of the current system files!
-2. To install, you need to download the latest version of the module.
+2. To install, you need to download the latest version of the module. Check the release area or pull from the module_build branch.
 3. In SuiteCRM open the Module Loader (Admin -> Module Loader)
 4. Upload package archive
 5. Click to install.
