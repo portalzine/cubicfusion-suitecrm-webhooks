@@ -4,9 +4,9 @@ Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | https:/
 ## Changes so far
 This is still in early testing ...
 
-1. Fixed Fatal Error with PHP 8.3
+1. Fixed Fatal Errors with PHP 8.3 and SuietCRM 8.8
 2. Fixed Language Files
-3. First initial cleanup
+3. Initial cleanup
 
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
@@ -22,7 +22,7 @@ This is still in early testing ...
 
 ## Setup
 Checkout this video for now:
-[Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)]
+Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
   
 ### License
 MIT
