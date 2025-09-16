@@ -1,6 +1,6 @@
 # Webhooks for SuiteCRM 8.x
 
-Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | 
+Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | https://github.com/SidorkinAlex/SuiteCRMWebHooks
 
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
