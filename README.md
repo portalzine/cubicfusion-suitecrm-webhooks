@@ -25,9 +25,28 @@ Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/3.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/4.png)
-
   
 ### License
 MIT
+
+## Feedback
+* I am open for your suggestions and feedback - Thank you for using or trying this out!
+* Drop me a line [@pztv][2] on Twitter
+* Follow me on [my Facebook page][3]
+* Or send an Email to [ideas@cubicfusion.com][4] ;-)
+
+## Additional Info
+**Idea Behind / Philosophy:**  
+
+**cubicFUSION** is my personal playground. I planned to make many of my projects public, but time is limited and running customer projects always a priority.  
+[Alex @ portalZINE NMN - Development meets Creativity][1]
+
+**ENJOY!**
+
+
+[1]:	https://portalzine.de/
+[2]:	http://twitter.com/pztv
+[3]:	http://www.facebook.com/portalzine
+[4]:	mailto:ideas@cubicfusion.com
 
 
