@@ -1,18 +1,9 @@
-# Webhooks from SuiteCRM
+# Webhooks for SuiteCRM 8.x
 
-[Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | 
-[Ru](#Вебхуки-для-SuiteCRM) |
-[En](#Webhooks-from-SuiteCRM)
+Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | 
 
-![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.15-23_18_20.png)
-![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.15-23_43_05.png)
-
-## support the project
-https://yoomoney.ru/to/410013242088802
-
-## поддержи проект
-https://yoomoney.ru/to/410013242088802
-
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
 
 ## Installation
 
@@ -62,6 +53,7 @@ Array
    1 at the first stage we collect the necessary data according to the condition and specify the in process status,
    
    2 at the second stage, we edit the record in the Web Hook Request module and collect the url field and change the status to " ready to send"
+
 ### Example
 Consider an example:
 you need to send a request to http://0.0.0.0/test/ID_Contact
@@ -73,13 +65,13 @@ last_name = Last Name Contact
 
 to do this, we create a process in which the target module is Contacts and set the multiple launch checkbox.
 
-![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_27_26.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/3.png)
 
 In the Actions section, specify the necessary parameters
 
 Next, we create a 2 process, which when creating an entry in the WEB_HOOKS_REQUEST module
 
-![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_22_34.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/4.png)
 
 with the condition that the name of the record matches the name specified in the first process.
 
@@ -90,76 +82,3 @@ in which we replace the value in the url with ID candidate
 MIT
 
 
-# Вебхуки для SuiteCRM
-
-[Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | 
-[Ru](#Вебхуки-для-SuiteCRM) |
-[En](#Webhooks-from-SuiteCRM)
-
-[Установка](#Установка)
-
-## Установка
-
-Перед установкой необходимо сделать резервную копию файлов системы!
-
-Для установки необходимо скачать последную версию плагина по ссылке https://github.com/SidorkinAlex/SuiteCRMWebHooks/releases/download/1.0/Build.zip
-
-Далее в SuiteCRM открыть Загрузчик модулей (Администрирование -> Загрузчик модулей)
-
-Загрузить архив с пакетом
-
-Нажать кнопку установить.
-
-## Использование
-   
-   Использование данного модуля предполагается через модуль процессы.
-   
-   В модуле процессы выберите необходимые условия для вызова WebHook.
-   
-   В блоке Действия укажите создание записи и выбирете модуль Web Hook Request
-   
-   в создаваемой записи в поле URL укажите URL для обратного выхова
-   
-   в полях "01...100 key" укажите ключ параметра в полях "01...100value" укажите соответствующее значение (его можно подтянуть из связанного модуля)
-   
-   Для удобства просмотра результатов выполнения рекомендуется так же указать Name однако это не обязательно.
-   
-   В поле "Request Type" выберите тип запроса json или form-data (если тип не будет указан то запрос отправится в виде form data)
-   
-   и для отправки запроса укажите статус "ready to send" (если не указать этот статус то запрос не будет выполнен)
-   
-   Если поле 01...100key пусто, то соответствующее значение 01...100 value не будет отправлено.
-   
-   
-   Если вам нужно указать в url значение какого-то поля, например id,то сборку запроса рекомендуется выполнять в 2 этапа
-   
-   1 на первом этапе по условию собираем нужные данные и указываем статус in process,
-   
-   2 на втором этапе резактируем запись в модуле Web Hook Request  и собираем поле url и изменяем статус на "ready to send"
-   
-### Рассмотрим пример
-
-   необходимо отправлять запрос на http://0.0.0.0/test/ID_Contact
-    с пост массивом
-    
-   first_name = First Name Contact
-   
-   last_name = Last Name Contact
-    
-   для этого создаем процесс, в котором целевым модулем является Contacts ставим чекбокс многократный запуск.
-    
-![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_27_26.png)
-
-   В блоке Действия указываем необходимые параметры
-    
-   Далее создаем 2 процесс, который при создании записи в модуле WEBH_HOOKS_REQUEST 
-    
-![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_22_34.png)
-
-   с условием, что Название записи совпадает с назваием указанным в первом процессе.
-    
-   в действиях создаем вначале Calculate Fields
-   в котором заменфяем значение в url на ID candidate
-    
-   далее создаем действие изменение записи в котором меняем статус
-    
