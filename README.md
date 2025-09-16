@@ -8,6 +8,9 @@ This is still in early testing ...
 2. Fixed Language Files
 3. Initial cleanup
 
+## Tested with
+- SuiteCRM 8.8 + PHP 8.3
+
 ## Installation
 
 1. Before installation, you should make a backup copy of the current system files!
