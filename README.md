@@ -4,6 +4,7 @@ Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | https:/
 ## Changes so far
 This is still in early testing ...
 
+v0.1.0-alpha
 1. Fixed Fatal Errors with PHP 8.3 and SuietCRM 8.8
 2. Fixed Language Files
 3. Initial cleanup
