@@ -8,10 +8,6 @@ This is still in early testing ...
 2. Fixed Language Files
 3. Initial cleanup
 
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/3.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/4.png)
 ## Installation
 
 1. Before installation, you should make a backup copy of the current system files!
@@ -24,6 +20,12 @@ This is still in early testing ...
 ## Setup
 Checkout this video for now:
 Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
+
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/3.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/4.png)
+
   
 ### License
 MIT
