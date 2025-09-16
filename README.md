@@ -10,7 +10,8 @@ This is still in early testing ...
 
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
-
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/3.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/4.png)
 ## Installation
 
 1. Before installation, you should make a backup copy of the current system files!
