@@ -35,3 +35,4 @@ nbproject/
 /vendor
 /logs/*
 .env
+.vscode/settings.json
