@@ -34,6 +34,7 @@ class SenderRequest
             $headers = array(
                 'Content-Type: application/json',
             );
+            $fields = json_encode( $fields);
         } else {
             $headers = array(
                 'Content-Type: multipart/form-data',
