@@ -383,8 +383,7 @@ class WEBH_HOOKS_REQUEST extends Basic
             'date_modified' => $this->date_modified,
             'modified_user_id' => $this->modified_user_id,
             'modified_by_name' => $this->modified_by_name,
-            'created_by' => $this->created_by,
-            'created_by_name' => $this->created_by_name,
+            'created_by' => $this->created_by,           
             'description' => $this->description, 
             'request_type' => $this->request_type,
         ];
