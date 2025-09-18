@@ -29,11 +29,11 @@ v0.1.0-alpha
 Checkout this video for now:
 Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
 
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/1.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/2.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/3.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/4.png)
-![image](https://portalzine.de/my-assets/github/suitecrm/webhook/5.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_1.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_2.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_3.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_4.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_5.png)
   
 ### License
 MIT
