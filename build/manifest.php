@@ -58,14 +58,14 @@ $manifest = array(
         ),
     'readme' => '',
     'key' => 'WEBH',
-    'author' => 'SidorkinAlexey',
-    'description' => '',
+    'author' => 'Alexander Graef forked from SidorkinAlexey',
+    'description' => 'Add webhooks to SuiteCRM vie Workflows',
     'icon' => '',
     'is_uninstallable' => true,
     'name' => 'Web_Hooks',
-    'published_date' => '2021-04-10 08:05:07',
+    'published_date' => '2025-16-09',
     'type' => 'module',
-    'version' => 1618041907,
+    'version' => '0.1.0-alpha',
     'remove_tables' => 'prompt',
 );
 
