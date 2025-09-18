@@ -9,6 +9,12 @@ v0.1.0-alpha
 2. Fixed Language Files
 3. Initial cleanup
 
+v0.1.1-alpha
+1. Fixed JSON encoding for request
+2. Updated screenshots
+3. Tested with SuiteCRM 8.9
+4. ...
+
 ## Tested with
 - SuiteCRM 8.8 + PHP 8.3
 
