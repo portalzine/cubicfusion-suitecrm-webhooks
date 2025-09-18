@@ -16,7 +16,7 @@ v0.1.1-alpha
 4. ...
 
 ## Tested with
-- SuiteCRM 8.8 + PHP 8.3
+- SuiteCRM 8.9 + PHP 8.3
 
 ## Plans
 - Further cleanup
