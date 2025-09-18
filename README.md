@@ -14,6 +14,7 @@ v0.1.1-alpha
 2. Updated screenshots
 3. Tested with SuiteCRM 8.9
 4. Further cleanup
+5. Add default bean properties to the data send out
 
 ## Tested with
 - SuiteCRM 8.9 + PHP 8.3

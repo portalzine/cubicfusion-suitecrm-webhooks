@@ -328,8 +328,9 @@ class WEBH_HOOKS_REQUEST extends Basic
     }
 
     public function send_request(){
+        $bean_data = $this->getCoreFieldsAsArray();
         $data = $this->getArrayDataFromFields();
-        $sendRequest = new SenderRequest($this->url,$data,$this->request_type);
+        $sendRequest = new SenderRequest($this->url,array_merge($data,$bean_data),$this->request_type);
         $result = $sendRequest->sendRequest();
         $this->saveResultRequerys($result);
     }
@@ -366,5 +367,37 @@ class WEBH_HOOKS_REQUEST extends Basic
         $this->status = self::$ERROR_STATUS;
         $this->save();
         throw new Exception($result, 1);
+    }
+
+    /**
+     * Returns an associative array of the core bean properties.
+     *
+     * @return array
+     */
+    public function getCoreFieldsAsArray(): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'date_entered' => $this->date_entered,
+            'date_modified' => $this->date_modified,
+            'modified_user_id' => $this->modified_user_id,
+            'modified_by_name' => $this->modified_by_name,
+            'created_by' => $this->created_by,
+            'created_by_name' => $this->created_by_name,
+            'description' => $this->description,
+            'deleted' => $this->deleted,
+            'created_by_link' => $this->created_by_link,
+            'modified_user_link' => $this->modified_user_link,
+            'assigned_user_id' => $this->assigned_user_id,
+            'assigned_user_name' => $this->assigned_user_name,
+            'assigned_user_link' => $this->assigned_user_link,
+            'SecurityGroups' => $this->SecurityGroups,
+            'url' => $this->url,
+            'status' => $this->status,
+            'data' => $this->data,
+            'error_text' => $this->error_text,
+            'request_type' => $this->request_type,
+        ];
     }
 }
