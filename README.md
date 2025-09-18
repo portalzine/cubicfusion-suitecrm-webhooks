@@ -5,7 +5,7 @@ Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | https:/
 This is still in early testing ...
 
 v0.1.0-alpha
-1. Fixed Fatal Errors with PHP 8.3 and SuietCRM 8.8
+1. Fixed Fatal Errors with PHP 8.3 and SuiteCRM 8.8
 2. Fixed Language Files
 3. Initial cleanup
 
@@ -13,14 +13,15 @@ v0.1.1-alpha
 1. Fixed JSON encoding for request
 2. Updated screenshots
 3. Tested with SuiteCRM 8.9
-4. ...
+4. Further cleanup
 
 ## Tested with
 - SuiteCRM 8.9 + PHP 8.3
 
 ## Plans
 - Further cleanup
-- Preload with some demo data
+- Preload with some optional demo data
+- Restructure code
   
 ## Installation
 
