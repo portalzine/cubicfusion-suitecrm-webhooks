@@ -328,8 +328,9 @@ class WEBH_HOOKS_REQUEST extends Basic
     }
 
     public function send_request(){
+        $bean_data = $this->getCoreFieldsAsArray();
         $data = $this->getArrayDataFromFields();
-        $sendRequest = new SenderRequest($this->url,$data,$this->request_type);
+        $sendRequest = new SenderRequest($this->url,array_merge($data,$bean_data),$this->request_type);
         $result = $sendRequest->sendRequest();
         $this->saveResultRequerys($result);
     }
@@ -366,5 +367,25 @@ class WEBH_HOOKS_REQUEST extends Basic
         $this->status = self::$ERROR_STATUS;
         $this->save();
         throw new Exception($result, 1);
+    }
+
+    /**
+     * Returns an associative array of the core bean properties.
+     *
+     * @return array
+     */
+    public function getCoreFieldsAsArray(): array
+    {
+        return [
+            'bean_id' => $this->id,
+            'name' => $this->name,
+            'date_entered' => $this->date_entered,
+            'date_modified' => $this->date_modified,
+            'modified_user_id' => $this->modified_user_id,
+            'modified_by_name' => $this->modified_by_name,
+            'created_by' => $this->created_by,           
+            'description' => $this->description, 
+            'request_type' => $this->request_type,
+        ];
     }
 }
