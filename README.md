@@ -16,13 +16,7 @@ Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | https:/
 
 This is still in early testing ...
 
-v0.1.0-alpha
-
-1. Fixed Fatal Errors with PHP 8.3 and SuiteCRM 8.8
-2. Fixed Language Files
-3. Initial cleanup
-
-v0.1.1-alpha - coming soon! 
+v0.1.1-alpha
 
 1. Fixed JSON encoding for request
 2. Updated screenshots
@@ -35,6 +29,14 @@ v0.1.1-alpha - coming soon!
    3. Cache-Control: no-cache
    4. X-Rate-Limit: 1000
    5. X-API-Key: your-api-key
+
+v0.1.0-alpha
+
+1. Fixed Fatal Errors with PHP 8.3 and SuiteCRM 8.8
+2. Fixed Language Files
+3. Initial cleanup
+
+
 
 ## Tested with
 
