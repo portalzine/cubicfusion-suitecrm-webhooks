@@ -12,7 +12,7 @@ v0.1.0-alpha
 2. Fixed Language Files
 3. Initial cleanup
 
-v0.1.1-alpha
+v0.1.1-alpha - coming soon! 
 
 1. Fixed JSON encoding for request
 2. Updated screenshots
@@ -35,6 +35,7 @@ v0.1.1-alpha
 - Further cleanup
 - Preload with some optional demo data
 - Restructure code
+- Make a demo video :)
 
 ## Installation
 
