@@ -54,6 +54,8 @@ Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_3.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_4.png)
 ![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_5.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_6.png)
+![image](https://portalzine.de/my-assets/github/suitecrm/webhook/webhook_7.png)
 
 ### License
 
