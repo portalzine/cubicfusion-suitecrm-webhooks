@@ -1,4 +1,13 @@
 # Webhooks for SuiteCRM 8.x
+A SuiteCRM module that enables webhook functionality for your SuiteCRM installation, bringing webhook capabilities to modern SuiteCRM versions with improved PHP 8.3 compatibility.
+This module is perfect for integrating SuiteCRM with external applications, triggering automated workflows, or synchronizing data across multiple platforms through webhook-based communication.
+## Key Features:
+
+- Send HTTP POST requests to external endpoints when CRM events occur
+- Configurable headers including authorization tokens and custom headers
+- Compatible with SuiteCRM 8.8+ and PHP 8.3
+- JSON payload encoding for seamless API integrations
+- Easy installation through SuiteCRM's Module Loader
 
 Forked from [Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | https://github.com/SidorkinAlex/SuiteCRMWebHooks
 
