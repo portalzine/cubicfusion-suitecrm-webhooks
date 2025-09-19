@@ -3,7 +3,7 @@ A SuiteCRM module that enables webhook functionality for your SuiteCRM installat
 This module is perfect for integrating SuiteCRM with external applications, triggering automated workflows, or synchronizing data across multiple platforms through webhook-based communication.
 ## Key Features:
 
-- Full access to the vast amount of data provided through the workflow integration (Leads, Contacts, Prospects ...)
+- Full access to the vast amount of data provided through the workflow integration (Leads, Contacts, Prospects etc)
 - Send HTTP POST requests to external endpoints when CRM events occur
 - Configurable headers including authorization tokens and custom headers
 - Compatible with SuiteCRM 8.8+ and PHP 8.3
