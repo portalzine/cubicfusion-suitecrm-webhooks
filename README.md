@@ -85,7 +85,7 @@ Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
 
 ## License
 
-MIT
+MIT - original files forked from https://github.com/SidorkinAlex/SuiteCRMWebHooks
 
 ## Feedback
 
