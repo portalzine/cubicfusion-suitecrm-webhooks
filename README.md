@@ -98,7 +98,10 @@ MIT
 
 **Idea Behind / Philosophy:**  
 
-**cubicFUSION** is my personal playground. I planned to make many of my projects public, but time is limited and running customer projects always a priority.  
+**cubicFUSION** is where I explore, experiment, and solve interesting puzzles. I maintain and contribute to codebases that spark my curiosity or present compelling challenges.
+While I'd love to open-source more of my work, client projects and time constraints keep most of my personal experiments private. 
+However, my passion for open source runs deep—I've been actively involved in several projects over the years and remain committed to the community.
+That's why my blog focuses heavily on open source solutions and the incredible work happening in that space!
 [Alex @ portalZINE NMN - Development meets Creativity][1]
 
 **ENJOY!**
