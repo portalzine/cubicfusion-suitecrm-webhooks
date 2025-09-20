@@ -44,10 +44,25 @@ v0.1.0-alpha
 
 ## Plans
 
-- Further cleanup
+### High Priority
+
+- Further code cleanup / restructuring of the codebase
+
+- Cleanup admin interface / add help popovers and descriptions
+
+### Low priority
+
 - Preload with some optional demo data
-- Restructure code
+
 - Make a demo video :)
+
+- Possibly add an option to handle incoming webhooks in the future. Currently using n8n or a standalone solution connecting via the SuiteCRM API.
+
+- HMAC signature
+
+### Nice to have
+
+- Nothing yet ;)
 
 ## Installation
 
