@@ -72,8 +72,6 @@ v0.1.0-alpha
 4. Upload package archive
 5. Click to install.
 
-## Setup
-
 Checkout this video for now:
 Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
 
