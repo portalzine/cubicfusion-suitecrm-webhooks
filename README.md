@@ -46,7 +46,7 @@ v0.1.0-alpha
 
 ### High Priority
 
-- Further code cleanup / restructuring of the codebase
+- Further code cleanup / restructuring of the codebase / comments / file header comment for tracking changes + attribution
 - Cleanup admin interface / add help popovers and descriptions
 - HMAC signature
 
@@ -85,7 +85,8 @@ Bastian Hammer's Youtube Video (https://www.youtube.com/watch?v=djq2036cARM)
 
 ## License
 
-MIT - original files forked from https://github.com/SidorkinAlex/SuiteCRMWebHooks
+MIT - original files forked from SidorkinAlex / https://github.com/SidorkinAlex/SuiteCRMWebHooks
+MIT - new files added by me
 
 ## Feedback
 
